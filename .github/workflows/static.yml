@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 6 Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Fuente más moderna y estilizada */
+            margin: 0;
+            padding: 0;
+            background-color: #d4e9d7; /* Verde suave */
+        }
+        .cabecera {
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Azul y morado claro */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cabecera .contenido-cabecera {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .cabecera .logo {
+            height: 100px;
+        }
+        .cabecera .texto-cabecera {
+            text-align: center;
+            color: #333;
+        }
+        .cabecera h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #4a3c8c; /* Morado oscuro */
+        }
+        .cabecera p {
+            font-size: 1rem;
+            color: #305d34; /* Verde oscuro */
+        }
+        .cabecera .portada {
+            height: 100px;
+        }
+        .contenedor {
+            display: flex;
+            min-height: calc(100vh - 60px);
+        }
+        .menu-izquierdo, .menu-derecho {
+            width: 15%;
+            background-color: #f0e4f7; /* Morado claro */
+            padding: 10px;
+        }
+        .menu-izquierdo h4, .menu-derecho nav ul li a {
+            font-size: 1rem;
+            color: #4a3c8c;
+        }
+        .menu-izquierdo ul, .menu-derecho ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-izquierdo ul li, .menu-derecho ul li {
+            margin: 10px 0;
+        }
+        .menu-izquierdo ul li a, .menu-derecho ul li a {
+            text-decoration: none;
+            color: #305d34;
+            font-weight: bold;
+        }
+        .menu-izquierdo ul li a:hover, .menu-derecho ul li a:hover {
+            color: #d44c4c; /* Resalta al pasar el mouse */
+        }
+        .contenido-principal {
+            flex: 1;
+            background-color: #ffffff; /* Blanco limpio */
+            padding: 20px;
+        }
+        .iframe-contenido {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .pie {
+            text-align: center;
+            background-color: #a1c4fd; /* Azul claro */
+            padding: 10px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <div class="contenido-cabecera">
+            <img src="JavaScript-logo.png" alt="Logo" class="logo">
+            <div class="texto-cabecera">
+                <h1>LABORATORIO DE COMPUTACIÓN INF-113</h1>
+                <h1>LABORATORIO DE DISEÑO Y JavaScript s</h1>
+                <p>Autor: Apaza Sega Leonel Isaias</p>
+            </div>
+            <img src="HTML5_logo_and_wordmark.svg.png" alt="Portada" class="portada">
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+        <!-- Menú izquierdo -->
+        <aside class="menu-izquierdo">
+            <h4>EJERCICIOS</h4>
+            <nav>
+                <ul>
+                    <li><a href="Pregunta1.html" target="contenido">Ejercicio 1</a></li>
+                    <li><a href="Pregunta2.html" target="contenido">Ejercicio 2</a></li>
+                    <li><a href="Pregunta3.html" target="contenido">Ejercicio 3</a></li>
+                    <li><a href="Pregunta4.html" target="contenido">Ejercicio 4</a></li>
+                    <li><a href="Pregunta5.html" target="contenido">Ejercicio 5</a></li>
+                    <li><a href="Pregunta6.html" target="contenido">Ejercicio 6</a></li>
+                    <li><a href="Pregunta7.html" target="contenido">Ejercicio 7</a></li>
+                    <li><a href="Pregunta8.html" target="contenido">Ejercicio 8</a></li>
+                    <li><a href="Pregunta9.html" target="contenido">Ejercicio 9</a></li>
+                    <li><a href="Pregunta10.html" target="contenido">Ejercicio 10</a></li>
+                    <li><a href="Pregunta11.html" target="contenido">Ejercicio 11</a></li>
+                    <li><a href="Pregunta12.html" target="contenido">Ejercicio 12</a></li>
+                    <li><a href="Pregunta13.html" target="contenido">Ejercicio 13</a></li>
+                    <li><a href="Pregunta14.html" target="contenido">Ejercicio 14</a></li>
+                    <li><a href="Pregunta15.html" target="contenido">Ejercicio 15</a></li>
+                    <li><a href="Pregunta16.html" target="contenido">Ejercicio 16</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido central -->
+        <main class="contenido-principal">
+            <iframe name="contenido" src="Caratula.html" class="iframe-contenido"></iframe>
+        </main>
+
+        <!-- Menú derecho -->
+        <aside class="menu-derecho">
+            <nav>
+                <ul>
+                    <li><a href="dedicatoria.html">Dedicatoria</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <p>Apaza Sega Leonel Isaias 2024</p>
+    </footer>
+</body>
+</html>
+
+
